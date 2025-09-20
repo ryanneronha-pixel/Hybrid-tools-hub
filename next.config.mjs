@@ -1,1 +1,6 @@
-export default { reactStrictMode: true };
+export default { 
+  reactStrictMode: true,
+  experimental: {
+    allowedHosts: true
+  }
+};
