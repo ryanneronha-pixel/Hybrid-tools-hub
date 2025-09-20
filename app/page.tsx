@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import AdSenseSlot from '@/components/AdSenseSlot'
+import React from 'react'
+import AdSenseSlot from '../components/AdSenseSlot'
 
 export default function Page(){
   return (

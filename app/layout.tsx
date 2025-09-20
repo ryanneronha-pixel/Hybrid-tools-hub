@@ -1,6 +1,7 @@
 import './globals.css'
 import Script from 'next/script'
 import Link from 'next/link'
+import React from 'react'
 
 export const metadata = {
   title: 'Hybrid Tools Hub',
@@ -13,18 +14,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body>
         <header className="header">
-          <div className="wrap" style={padding:'14px 0'}>
-            <nav style={display:'flex',gap:12,alignItems:'center'}>
+          <div className="wrap" style={{padding:'14px 0'}}>
+            <nav style={{display:'flex',gap:12,alignItems:'center'}}>
               <Link href="/">Hybrid Tools Hub</Link>
               <Link href="/tools">All Tools</Link>
-              <Link href="/privacy" style={marginLeft:'auto'}>Privacy</Link>
+              <Link href="/privacy" style={{marginLeft:'auto'}}>Privacy</Link>
               <Link href="/contact">Contact</Link>
             </nav>
           </div>
         </header>
-        <main className="wrap" style={padding:'24px 0'}>{children}</main>
+        <main className="wrap" style={{padding:'24px 0'}}>{children}</main>
         <footer className="footer">
-          <div className="wrap" style={padding:'20px 0',fontSize:14,color:'#555'}>
+          <div className="wrap" style={{padding:'20px 0',fontSize:14,color:'#555'}}>
             © 2025 Hybrid Tools Hub · <a href="/ads.txt">ads.txt</a>
           </div>
         </footer>
