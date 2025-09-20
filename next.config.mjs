@@ -1,6 +1,16 @@
 export default { 
   reactStrictMode: true,
-  experimental: {
-    allowedHosts: true
-  }
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
+      },
+    ]
+  },
 };
